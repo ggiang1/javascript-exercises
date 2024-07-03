@@ -1,10 +1,21 @@
 const repeatString = function(text, amount) {
-    // return text.repeat(amount)
+    // if (amount >= 0) {
+    //     return text.repeat(amount);
+    // } else {
+    //     return "ERROR";
+    // }
+
     var final_string = '';
-    for (let i = 0; i < amount; i++) {
-        final_string += text;
+    if (amount >= 0) {
+        for (let i = 0; i < amount; i++) {
+            final_string += text;
+        }
+
+        return final_string;
+    } else {
+        return "ERROR"
     }
-    return final_string;
+ 
 };
 
 // Do not edit below this line
